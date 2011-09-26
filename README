@@ -1,0 +1,24 @@
+Impermium-PHP
+
+A simple PHP wrapper for Impermium
+
+Usage:
+
+    $impermium = new ImpermiumAPI($api_key);
+
+    $response = $impermium->contentComment($event_id, array(
+        'uid_ref'       => 'foo',
+        'content'       => 'bar',
+        'resource_url'  => 'http://www.popsugar.com/',
+        'enduser_ip'    => '127.0.0.1',
+    ));
+
+    if ($response->spam->label == 'spam') {
+        echo "It's spam!";
+    }
+
+@author     Alec Vallintine <avallintine@sugarinc.com>
+@version    0.1
+@copyright  Copyright (c) 2011 Sugar Inc.
+@link       https://github.com/PopSugar/Impermium-PHP
+@license
