@@ -24,7 +24,7 @@
  * @version     0.1
  * @copyright   Copyright (c) 2011 Sugar Inc.
  * @link        https://github.com/PopSugar/Impermium-PHP
- * @license		
+ * @license		see LICENSE
  */
 
 if (!function_exists('curl_init')) {
